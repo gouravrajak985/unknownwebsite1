@@ -33,7 +33,7 @@ function Team() {
   ];
 
   return (
-    <section className="py-16 bg-[#F8FAFC]">
+    <section className="py-16 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#003366] mb-4">

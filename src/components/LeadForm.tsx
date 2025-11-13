@@ -26,13 +26,13 @@ function LeadForm() {
   };
 
   return (
-    <section id="lead-form" className="py-16 bg-gradient-to-br from-[#003366] via-[#0070BA] to-[#003366]">
+    <section id="lead-form" className="py-16 bg-transparent">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-6 sm:p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#003366] mb-4 text-center">
+        <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 sm:p-8 md:p-12 animate-fade-in-up hover:bg-white/70 transition-all duration-300 hover:shadow-xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#003366] mb-4 text-center animate-fade-in-up">
             Get Your Free ERP Demo
           </h2>
-          <p className="text-[#555555] text-center mb-8">
+          <p className="text-[#555555] text-center mb-8 animate-fade-in-up animation-delay-200">
             Fill out the form below and our experts will contact you shortly
           </p>
 

@@ -34,7 +34,7 @@ function Highlights() {
   };
 
   return (
-    <section id="about" className="py-16 bg-white">
+    <section id="about" className="py-16 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-[#003366] text-center mb-12">
           Why Choose Us?
@@ -44,13 +44,14 @@ function Highlights() {
           {highlights.map((highlight, index) => (
             <div
               key={index}
-              className="text-center p-4 sm:p-6 bg-[#F8FAFC] rounded-xl hover:shadow-lg transition-all"
+              className="text-center p-4 sm:p-6 bg-[#F8FAFC] rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 animate-fade-in-up group hover-lift"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-[#0070BA] to-[#003366] rounded-full flex items-center justify-center mx-auto mb-4">
-                <highlight.icon className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 bg-gradient-to-br from-[#0070BA] to-[#003366] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:rotate-12 transition-transform duration-300 group-hover:shadow-lg animate-pulse">
+                <highlight.icon className="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-[#0070BA] mb-2">{highlight.title}</h3>
-              <p className="text-[#555555]">{highlight.description}</p>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0070BA] mb-2 group-hover:text-[#003366] transition-colors duration-300">{highlight.title}</h3>
+              <p className="text-[#555555] group-hover:text-[#0070BA] transition-colors duration-300">{highlight.description}</p>
             </div>
           ))}
         </div>

@@ -39,7 +39,7 @@ function Features() {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-[#003366] text-center mb-12">
           Features of SAP Business One ERP
@@ -49,12 +49,13 @@ function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-[#F8FAFC] p-6 sm:p-8 rounded-xl hover:shadow-lg transition-all border-2 border-transparent hover:border-[#0070BA]/20"
+              className="bg-[#F8FAFC] p-6 sm:p-8 rounded-xl hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-[#0070BA]/30 transform hover:-translate-y-1 hover:scale-105 animate-fade-in-up group"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-12 h-12 bg-[#0070BA] rounded-lg flex items-center justify-center mb-4">
-                <feature.icon className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-[#0070BA] rounded-lg flex items-center justify-center mb-4 group-hover:bg-gradient-to-br group-hover:from-[#0070BA] group-hover:to-[#003366] transition-all duration-300 group-hover:rotate-12">
+                <feature.icon className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-bold text-[#003366] mb-3">{feature.title}</h3>
+              <h3 className="text-xl font-bold text-[#003366] mb-3 group-hover:text-[#0070BA] transition-colors duration-300">{feature.title}</h3>
               <p className="text-[#555555] leading-relaxed">{feature.description}</p>
             </div>
           ))}

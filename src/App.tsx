@@ -14,20 +14,42 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50">
       <Header />
-      <Hero />
-      <LeadForm />
-      <Clients />
-      <Services />
-      <Features />
-      <AddOns />
-      <S4Hana />
-      <Highlights />
-      <Testimonials />
-      <Team />
-      <VideoSection />
-      <Footer />
+      <div className="bg-transparent relative z-10">
+        <Hero />
+        <LeadForm />
+      </div>
+      <div className="relative z-20 bg-transparent">
+        <Clients />
+      </div>
+      <div className="relative z-30 bg-transparent">
+        <Services />
+      </div>
+      <div className="relative z-40 bg-transparent">
+        <Features />
+      </div>
+      <div className="relative z-50 bg-transparent">
+        <AddOns />
+      </div>
+      <div className="relative z-[60] bg-transparent">
+        <S4Hana />
+      </div>
+      <div className="relative z-[70] bg-transparent">
+        <Highlights />
+      </div>
+      <div className="relative z-[80] bg-transparent">
+        <Testimonials />
+      </div>
+      <div className="relative z-[90] bg-transparent">
+        <Team />
+      </div>
+      <div className="relative z-[100] bg-transparent">
+        <VideoSection />
+      </div>
+      <div className="relative z-[110] bg-transparent">
+        <Footer />
+      </div>
     </div>
   );
 }

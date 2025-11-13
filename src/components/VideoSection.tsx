@@ -2,7 +2,7 @@ import { Play } from 'lucide-react';
 
 function VideoSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="relative rounded-xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#003366] to-[#0070BA] aspect-video">

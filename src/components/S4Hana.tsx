@@ -21,13 +21,13 @@ function S4Hana() {
   };
 
   return (
-    <section id="sap" className="py-12 sm:py-16 bg-gradient-to-r from-[#003366] to-[#0070BA] text-white">
+    <section id="sap" className="py-12 sm:py-16 bg-transparent text-[#003366]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#003366]">
             Unlock Enterprise-Level Power: SAP S/4HANA Solutions
           </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-[#0070BA] max-w-3xl mx-auto">
             Scale your business with next-generation intelligent ERP
           </p>
         </div>
@@ -36,13 +36,14 @@ function S4Hana() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-xl border border-white/20 hover:bg-white/20 transition-all"
+              className="bg-white/60 backdrop-blur-sm p-6 sm:p-8 rounded-xl border border-[#0070BA]/20 hover:bg-white/80 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 animate-fade-in-up group hover-lift"
+              style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-[#FFD700] rounded-lg flex items-center justify-center flex-shrink-0">
-                  <feature.icon className="w-6 h-6 text-[#003366]" />
+                <div className="w-12 h-12 bg-[#0070BA] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:rotate-6 transition-transform duration-300 group-hover:shadow-lg">
+                  <feature.icon className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <p className="text-lg font-medium leading-relaxed pt-2">{feature.text}</p>
+                <p className="text-lg font-medium leading-relaxed pt-2 text-[#003366] group-hover:text-[#0070BA] transition-colors duration-300">{feature.text}</p>
               </div>
             </div>
           ))}
@@ -51,7 +52,7 @@ function S4Hana() {
         <div className="text-center">
           <button
             onClick={scrollToForm}
-            className="bg-white text-[#0070BA] px-8 py-4 rounded-md font-semibold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-xl"
+            className="bg-[#0070BA] text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-[#005a94] transition-all transform hover:scale-105 shadow-lg"
           >
             Schedule a Free Consultation Call
           </button>
