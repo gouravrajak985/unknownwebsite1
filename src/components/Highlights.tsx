@@ -40,16 +40,16 @@ function Highlights() {
           Why Choose Us?
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-12">
           {highlights.map((highlight, index) => (
             <div
               key={index}
-              className="text-center p-6 bg-[#F8FAFC] rounded-xl hover:shadow-lg transition-all"
+              className="text-center p-4 sm:p-6 bg-[#F8FAFC] rounded-xl hover:shadow-lg transition-all"
             >
               <div className="w-16 h-16 bg-gradient-to-br from-[#0070BA] to-[#003366] rounded-full flex items-center justify-center mx-auto mb-4">
                 <highlight.icon className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-[#0070BA] mb-2">{highlight.title}</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0070BA] mb-2">{highlight.title}</h3>
               <p className="text-[#555555]">{highlight.description}</p>
             </div>
           ))}

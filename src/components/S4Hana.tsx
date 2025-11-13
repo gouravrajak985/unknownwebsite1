@@ -21,7 +21,7 @@ function S4Hana() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-r from-[#003366] to-[#0070BA] text-white">
+    <section id="sap" className="py-12 sm:py-16 bg-gradient-to-r from-[#003366] to-[#0070BA] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -32,11 +32,11 @@ function S4Hana() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-12">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20 hover:bg-white/20 transition-all"
+              className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-xl border border-white/20 hover:bg-white/20 transition-all"
             >
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 bg-[#FFD700] rounded-lg flex items-center justify-center flex-shrink-0">

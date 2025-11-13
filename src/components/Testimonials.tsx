@@ -35,12 +35,12 @@ function Testimonials() {
           Helping Customers Steer Their Digital Transformation
         </h2>
 
-        <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-12">
-          <div className="flex items-start space-x-4 mb-6">
-            <Quote className="w-12 h-12 text-[#0070BA] flex-shrink-0" />
+        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 md:p-12 mb-12">
+          <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
+            <Quote className="w-10 h-10 sm:w-12 sm:h-12 text-[#0070BA] flex-shrink-0" />
             <div>
-              <h3 className="text-2xl font-bold text-[#003366] mb-4">IFGL Refractories Ltd</h3>
-              <p className="text-[#555555] text-lg leading-relaxed mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#003366] mb-4">IFGL Refractories Ltd</h3>
+              <p className="text-[#555555] text-base sm:text-lg leading-relaxed mb-4">
                 "Our unintegrated processes led to duplication of data, lack of real-time business visibility, and long turnaround times. The solution helped us achieve automation and integration."
               </p>
               <p className="text-[#0070BA] font-semibold">– Group IT Head</p>
@@ -48,11 +48,11 @@ function Testimonials() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12">
           {successMetrics.map((metric, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all text-center"
+              className="bg-white p-6 sm:p-8 rounded-xl shadow-md hover:shadow-xl transition-all text-center"
             >
               <div className="w-14 h-14 bg-gradient-to-br from-[#0070BA] to-[#003366] rounded-full flex items-center justify-center mx-auto mb-4">
                 <metric.icon className="w-7 h-7 text-white" />

@@ -26,9 +26,9 @@ function LeadForm() {
   };
 
   return (
-    <section id="lead-form" className="py-16 bg-[#F4F7FA]">
+    <section id="lead-form" className="py-16 bg-gradient-to-br from-[#003366] via-[#0070BA] to-[#003366]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
+        <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl p-6 sm:p-8 md:p-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#003366] mb-4 text-center">
             Get Your Free ERP Demo
           </h2>

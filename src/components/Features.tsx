@@ -45,11 +45,11 @@ function Features() {
           Features of SAP Business One ERP
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-[#F8FAFC] p-8 rounded-xl hover:shadow-lg transition-all border-2 border-transparent hover:border-[#0070BA]/20"
+              className="bg-[#F8FAFC] p-6 sm:p-8 rounded-xl hover:shadow-lg transition-all border-2 border-transparent hover:border-[#0070BA]/20"
             >
               <div className="w-12 h-12 bg-[#0070BA] rounded-lg flex items-center justify-center mb-4">
                 <feature.icon className="w-6 h-6 text-white" />

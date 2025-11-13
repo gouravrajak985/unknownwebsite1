@@ -38,11 +38,11 @@ function Services() {
           Comprehensive end-to-end services to ensure your ERP success
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-12">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1"
+              className="bg-white p-6 sm:p-8 rounded-xl shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1"
             >
               <div className="w-14 h-14 bg-gradient-to-br from-[#0070BA] to-[#003366] rounded-lg flex items-center justify-center mb-4">
                 <service.icon className="w-7 h-7 text-white" />
